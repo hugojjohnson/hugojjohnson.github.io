@@ -13,15 +13,15 @@
 
 
     .blog h1 {
-        @apply text-black text-4xl font-bold mb-4 mt-8
+        @apply text-black text-4xl font-bold mb-4 mt-8 first-letter:capitalize
     }
 
     .blog h2 {
-        @apply text-black text-4xl font-bold first-letter:capitalize
+        @apply text-black text-2xl font-bold mb-3 mt-6 first-letter:capitalize
     }
 
     .blog h3 {
-        @apply text-gray-600 text-xl
+        @apply text-gray-600 text-xl my-2 first-letter:capitalize
     }
     .blog a {
         @apply text-blue-600
