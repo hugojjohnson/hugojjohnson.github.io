@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+    .blog-title {
+            @apply text-black text-4xl font-bold mb-4
+    }
+
+    .blog-subtitle {
+        @apply text-gray-600 text-xl
+    }
+
+
+    .blog h1 {
+        @apply text-black text-4xl font-bold mb-4 mt-8
+    }
+
+    .blog h2 {
+        @apply text-black text-4xl font-bold first-letter:capitalize
+    }
+
+    .blog h3 {
+        @apply text-gray-600 text-xl
+    }
+    .blog a {
+        @apply text-blue-600
+    }
+    .blog code {
+        @apply rounded-md
+    }
 }

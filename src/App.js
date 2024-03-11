@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { UserContext } from "./Context";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './components/home/Home';
+import Navbar from "./components/Navbar";
+import ProjectTemplate from "./components/projects/ProjectTemplate";
+import Search from "./components/projects/Search";
+import BlogDev from "./components/projects/BlogDev";
 
 function App() {
+  const [tags, setTags] = useState([]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider value={[tags, setTags]}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Search />} />
+          <Route path="projects/:query" element={<ProjectTemplate />} />
+          <Route path="dev/blogs" element={<BlogDev />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    </UserContext.Provider>
   );
 }
 
 export default App;
+export { UserContext };

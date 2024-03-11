@@ -1,0 +1,61 @@
+[
+    {
+        "name": "CSS",
+        "color": "text-blue-700",
+        "tool": true,
+        "link": "/tools/css.png"
+    },
+    {
+        "name": "Github",
+        "color": "text-gray-500",
+        "tool": true,
+        "link": "/tools/github.png"
+    },
+    {
+        "name": "HTML",
+        "color": "text-orange-600",
+        "tool": true,
+        "link": "/tools/html.png"
+    },
+    {
+        "name": "JavaScript",
+        "color": "text-yellow-500",
+        "tool": true,
+        "link": "/tools/javascript.png"
+    },
+    {
+        "name": "NodeJs",
+        "color": "text-green-600",
+        "tool": true,
+        "link": "/tools/node.png"
+    },
+    {
+        "name": "React",
+        "color": "text-blue-400",
+        "tool": true,
+        "link": "/tools/react.png"
+    },
+    {
+        "name": "Tailwind",
+        "color": "text-blue-700",
+        "tool": true,
+        "link": "/tools/tailwind.png"
+    },
+    {
+        "name": "Python",
+        "color": "text-yellow-600",
+        "tool": true,
+        "link": "/tools/python.jpg"
+    },
+    {
+        "name": "Swift",
+        "color": "text-orange-700",
+        "tool": true,
+        "link": "/tools/swift.png"
+    },
+    {
+        "name": "ML",
+        "color": "text-gray-600",
+        "tool": false
+    }
+]

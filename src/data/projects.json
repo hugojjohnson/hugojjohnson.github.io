@@ -1,0 +1,41 @@
+[
+    {
+        "url": "watersort-puzzle-solver",
+        "title": "Watersort Puzzle Solver",
+        "blurb": "Never get stuck again",
+        "cover": "/projects/watersort.png",
+        "githubLink": "https://github.com/hugojjohnson/watersort-solver",
+        "tags": ["Python", "NodeJs", "React", "Tailwind"],
+        "blog": "<pre> <code className='language-typescript'>const variable = 'raw';</code> </pre>"
+    },
+    {
+        "url": "cryptogram-solver",
+        "title": "Cryptogram solver",
+        "blurb": "A mobile game puzzle solver.",
+        "cover": "/projects/cryptogram.png",
+        "githubLink": "https://github.com",
+        "tags": ["Swift"],
+        "blog": "Yayy"
+    },
+    {
+        "url": "linear-regression-library",
+        "title": "My linear regression library",
+        "blurb": "Like TensorFlow, but better.",
+        "cover": "/projects/linear-regression.png",
+        "githubLink": "https://github.com",
+        "tags": ["Python", "ML"],
+        "blog": "Here is my implementation of a linear regression algorithm."
+    },
+    {
+        "url": "invoicing-system",
+        "title": "My tutoring invoicing system",
+        "blurb": "Built by me, for me g.",
+        "cover": "/projects/linear-regression.png",
+        "githubLink": "https://github.com",
+        "tags": [
+            "Python",
+            "ML"
+        ],
+        "blog": "Here is my implementation of a linear regression algorithm."
+    }
+]
