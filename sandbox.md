@@ -1,34 +1,43 @@
 
 # Project Demo
-[Check it out!](https://hugojjohnson.github.io/invoice-system-demo/)
+Unfortunately, this app only works on mobile devices. The app can be demoed by downloading the Expo Go app on the App Store or Google Play Store - for more information, please see the [GitHub](https://github.com/hugojjohnson/exercise-logger-app).
 
 # Summary
-Since 2021, I have been tutoring primary and high school subjects in Physics, Chemistry, and Mathematics. I eventually needed to begin sending my clients invoices at regular intervals with a receipt of my services, including the date, duration and how much I have charged them. This web app was designed to automate the process of recording lessons and sending invoices.
+Mobile Apps are used everywhere. From Instagram to Crossy Road, these apps are used by everyone, all the time, often non-stop... I just had to learn how to make one! Fortunately, I had already learned the basics of React, and so React Native seemed right down my alley. I thought I would make an app to encourage myself to exercise more, and so I set about making 'the Duolingo of Exercise' 😁.
 
 # Tools
-This app was developed with `NodeJS`, `React`, `Tailwind CSS` and is hosted on a Heroku server.
-Like many of my other projects, this project was originally implemented in Python with a command line interface, before being redesigned to work on the web.
+This app was developed with `Expo`, `React Native` and `NativeWind`, and is hosted with Expo on Expo Go. The [expo-secure-store](https://docs.expo.dev/versions/latest/sdk/securestore/), [expo-status-bar](https://docs.expo.dev/versions/latest/sdk/status-bar/) and [community datetimepicker](https://docs.expo.dev/versions/latest/sdk/date-time-picker/) libraries, among others, were also used.
 
-## What I learned
-### JSON Schema
-I wanted a way to easily validate the data I passed to my server so that I could verify that each key entry was included. At first I considered writing validation software myself, however I hoped that someone had already done this before. And I'm glad I did - the extensive documentation of JSON Schema and the amount of validators already available was plenty. 
+# What I learned
+## One of my biggest projects yet
+This project was definitely the most ambitious project I have done until this point - I went from making static Web Apps to designing a user management system that managed both manual password authentication and signing in with Google, and designing a database that could efficiently hold the bespoke sets of data that I needed, while leaving room for my needs to change in the future. 
 
-### Heroku Buildpacks
-The local version of the app includes the ability to generate a PDF invoice that is ready to be sent out - however, when I deployed the app to Heroku, this functionality no longer worked because pdflatex was not installed. I discovered that I could use buildpacks - Heroku's package manager - to load the software I needed. While I haven't made this work yet, I'm on my way to understanding how I can upload my own buildpacks to my server.
 
-### Code reusability
-At many stages in this project I realised that I had already designed something very similar before, which let me reuse existing features either through inheritance or by abstracting it into a function.
+## Clerk Authentication
+
+
+## Google Authentication
+
+
+## Dedicated Database Servers
+About halfway through the project I discovered that I had to set up some sort of database system - reading and writing to JSON files was tedious and often broke. I decided on using MongoDB and I was confused as to why I was being encouraged so strongly to use a separate server solely for managing and storing data. I thought, "I already have a front end and a back end server, why do I need a third?!"
+
+## SQL vs Non-Relational Databases
+
+
+
+A long, long time ago, before React Native, companies used to employ three teams of developers - a Web Dev team to develop the Website, an IOS team who would reproduce the product with Swift, and an Android team who would reproduce it with Kotlin. These teams of developers would struggle to work together to produce a coherent experience for the end user, sometimes effectively, sometimes not. Today, React Native lets programmers use the same skill set to write all three different types of applications. React Native's philosophy is that with enough APIs, any app can be generalised across platforms. I have definitely found that to be the case - the huge amount of open-source libraries available has been instrumental in cutting down the time developing features that I would otherwise spend a *veeery* long time Googling for.
 
 # Local setup
-To set up and run this project locally, the Github repo can be found [here](https://github.com/hugojjohnson/invoice-system-demo).
+To set up and run this project locally, the GitHub repo can be found [here](https://github.com/hugojjohnson/exercise-logger-app).
 
 1. Download or clone the repo onto your local machine
 
-2. In one terminal, type `cd backend; npm install; npm run start` to install the backend dependencies and start the server.
+2. Install [React Native](https://reactnative.dev/)
 
-3. In a different terminal, type `cd frontend; npm install; npm run start` to install the frontend dependencies and start the front end server.
+3. Follow the instructions to download `Expo Go`.
 
-(Note that this requires having [NodeJS](https://nodejs.org/en) installed.)
+4. Type `npm expo start` and you're all set!
 
 
 
