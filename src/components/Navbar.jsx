@@ -24,12 +24,16 @@ export default function Navbar() {
             url: "/"
         },
         {
+            name: "projects",
+            url: "/#projects"
+        },
+        {
             name: "tools",
             url: "/#tools"
         },
         {
-            name: "projects",
-            url: "/#projects"
+            name: "search",
+            url: "/projects"
         },
         {
             name: "contact",
@@ -38,7 +42,7 @@ export default function Navbar() {
     ]
 
 
-    return (<><div className="w-full h-20 flex justify-center md:justify-end items-center fixed drop-shadow-sm bg-white z-50">
+    return (<><div className="w-full h-20 flex justify-center md:justify-end items-center fixed z-50">
         <div className="flex">
             {
                 links.map((link, index) => {
