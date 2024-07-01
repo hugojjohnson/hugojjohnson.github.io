@@ -1,5 +1,19 @@
 [
     {
+        "url": "proyecto",
+        "title": "Proyecto",
+        "blurb": "Be mindful of your time.",
+        "cover": "/projects/proyecto.png",
+        "githubLink": "https://github.com/hugojjohnson/proyecto",
+        "tags": [
+            "Python",
+            "NodeJs",
+            "React",
+            "Tailwind"
+        ],
+        "blog": "# Project Demo\n[Check it out!](https://hugojjohnson.github.io/proyecto)\n\n# Summary\nWith a few of the projects I have been working on so far, I have noticed that JavaScript just doesn't have enough structure. I spent more hours than I want to admit trying to fix silly mistakes that I wouldn't make in a statically typed language like Java.\n\nFor the backend, I tried using Python - specifically FastAPI and Beanie. I found the development process about as hard as I was expecting. While I appreciate having done it, I plan on sticking to TypeScript for the backend in the future.\n\nProyecto is designed to help you be more mindful of your time. By establishing clear projects and goals, you can ensure that any progress you make towards a project that you are working on contributes to your overall aims. Feel free to try it out!\n\n# Tools\nThis app was developed with `Vite` using `TypeScript` and `FastAPI`, and is hosted with GitHub Pages and Heroku. A `MongoDB` database hosted on Atlas was connected to with the `Beanie` library.\n\n# What I learned\n## Types, types!\nWhat I expected from static typing was an increase in development speed - I wouldn't have to worry about accessing a field that doesn't exist, or forget to convert a string to an integer. What I wasn't expecting was how early on in the project I had to define my data types. Originally, my development process went as follows:\n\n<ol style=\"list-style-type: decimal; list-style-position: inside; margin-top: 15px; margin-bottom: 15px;\">\n<li>Create a user object with the bare minimum features.</li>\n<li>Realise I forgot to include a username.</li>\n<li>Search my \\*entire\\* application for any mention of user, and make sure it handles the username properly.</li>\n<li>Repeat steps 2-3 until running out of energy.</li>\n\n</ol>\n\nNow, with static typing:\n<ol style=\"list-style-type: decimal; list-style-position: inside; margin-top: 15px; margin-bottom: 15px;\">\n<li>Define the `user` interface</li>\n<li>Implement the interface every time I need to change the user.</li>\n</ol>\n\nWhile I was programming, this was a pain: code that I *knew* would work threw errors, and I had to think much more about exactly what my data types would look like. However towards the end of the project, I was grateful that I had such clear data structures.\n\n## Consitent colour\nI picked a pink-to-indigo gradient very early on in the project, and tried to stick with it as I was developing the front end. I standardised input fields and definitely plan on making my own component library at some point.\n\n# Local setup\nTo set up and run this project locally, the GitHub repo can be found [here](https://github.com/hugojjohnson/proyecto) and [here](https://github.com/hugojjohnson/proyecto-backend).\n\n1. Download or clone the repo onto your local machine\n\n2. Install [NodeJS](https://nodejs.org/en/download/package-manager)\n\n3. Set up a [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) and save the login credentials in `.env`.\n\n\n\n\n"
+    },
+    {
         "url": "watersort-puzzle-solver",
         "title": "Watersort Puzzle Solver",
         "blurb": "Never get stuck again",
