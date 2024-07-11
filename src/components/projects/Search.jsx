@@ -8,7 +8,7 @@ var json_tags = require('./../../data/tags.json');
 
 
 export default function Search() {
-    const minimise_length = 3;
+    const minimise_length = 4;
     const [searchTerm, setSearchTerm] = useState("");
     const [viewTags, setViewTags] = useState(json_tags.slice(0, minimise_length));
     const [tags, setTags] = useContext(UserContext);
@@ -80,10 +80,10 @@ export default function Search() {
             <p className="self-start pb-7">Most of the projects have <strong>demos</strong> available - be sure to check them out!</p>
 
             <div className="w-full flex lg:flex-row flex-col justify-between sm:items-end lg:items-start">
-                <input className="w-full lg:w-[50%] h-10 border-[0.5px] pl-3 border-gray-300 rounded-lg outline-none self-start" placeholder="search a project name..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)}/>
-                <div className="flex flex-col mb-6">
+                <input className="w-full lg:mr-24 h-10 border-[0.5px] pl-3 border-gray-300 rounded-lg outline-none self-start" placeholder="search a project name..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)}/>
+                <div className="flex flex-col mb-6 w-80">
                     <h1 className="text-lg underline mb-3 mt-6 lg:mt-0">Tags:</h1>
-                    <ul className="grid grid-cols-3 gap-x-5">
+                    <ul className="grid grid-cols-2 gap-x-5">
                         {tags_html}
                         <p className="text-blue-900 cursor-pointer" onClick={() => {
                             if (viewTags.length === minimise_length) {
@@ -96,7 +96,7 @@ export default function Search() {
                 </div>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
                 {projects_html}
             </div>
         </div>

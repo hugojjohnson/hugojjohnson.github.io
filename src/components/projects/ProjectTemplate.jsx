@@ -48,10 +48,10 @@ export default function ProjectTemplate() {
                 }
                 </ul>
             </div>
-            <img className="w-full h-[30%] object-contain my-20" src={project.cover} alt='cover' />
+            <img className="w-[60%] max-h-[40%] object-fit my-16 rounded-lg shadow-lg mx-auto" src={project.cover} alt='cover' />
 
 
-            <div className="blog mb-32" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(md.render(project.blog), { ADD_ATTR: ['target'] }) }} />
+            <div className="blog pb-40" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(md.render(project.blog), { ADD_ATTR: ['target'] }) }} />
         </div>
     </div>);
 

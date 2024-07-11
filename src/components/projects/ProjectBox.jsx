@@ -14,9 +14,9 @@ export default function ProjectBox({ project }) {
         })[0]
     }
 
-    return <Link to={"/projects/" + project.url} className="w-72 p-4 rounded-md shadow-md hover:scale-105 transition duration-300 bg-white">
-            <img className="h-32 w-64 object-cover mx-auto rounded-md" src={project.cover} alt="react" />
-            <p className="text-lg text-center my-5">{project.title}</p>
+    return <Link to={"/projects/" + project.url} className="p-4 rounded-md shadow-md hover:scale-105 transition duration-300 bg-white">
+            <img className="h-40 w-72 object-cover mx-auto rounded-md" src={project.cover} alt="react" />
+            <p className="text-lg text-center my-4">{project.title}</p>
             <div className="w-full h-[5vh] px-5 gap-x-3 flex flex-row flex-wrap">
                 {
                     project.tags.map((projTag, index) => {
