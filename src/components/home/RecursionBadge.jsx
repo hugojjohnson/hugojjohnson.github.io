@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import useSound from 'use-sound';
-import boopSfx from '/pickup.mp3';
+import boopSfx from './pickup.mp3';
 
 
 const RecursionBadge = () => {
     const [visible, setVisible] = useState(false);
     const [play] = useSound(boopSfx);
 
-    play()
-
     useEffect(() => {
         // Fade in
+        play()
         setVisible(true);
 
         const timeoutId = setTimeout(() => {
@@ -18,7 +17,7 @@ const RecursionBadge = () => {
         }, 5000);
 
         return () => clearTimeout(timeoutId);
-    }, []);
+    }, [play]);
 
     return (
         <div className={`absolute right-20 top-20 bg-white shadow-lg rounded-lg flex flex-col items-center justify-center border-2 border-gray-100 p-3 transition-opacity duration-500 ${visible ? 'opacity-100' : 'opacity-0'}`}>
