@@ -7,9 +7,10 @@ const RecursionBadge = () => {
     const [visible, setVisible] = useState(false);
     const [play] = useSound(boopSfx);
 
+    play()
+
     useEffect(() => {
         // Fade in
-        play()
         setVisible(true);
 
         const timeoutId = setTimeout(() => {
