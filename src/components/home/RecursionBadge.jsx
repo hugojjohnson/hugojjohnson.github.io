@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useSound from 'use-sound';
-import boopSfx from './pickup.mp3';
+import boopSfx from '/pickup.mp3';
 
 
 const RecursionBadge = () => {
