@@ -1,48 +1,19 @@
 # Project Demo
-[Check it out!](https://hugojjohnson.github.com/proyecto)
+<a target="_blank" href="https://hugojjohnson.github.com/workaholic">Check it out!</a>
 
 # Summary
-With a few of the projects I have been working on so far, I have noticed that JavaScript just doesn't have enough structure. I spent more hours than I want to admit trying to fix silly mistakes that I wouldn't make in a statically typed language like Java.
+Everyone needs a personal website: It's what puts you into the world, promotes you, and shows everyone what you're passionate about. For programmers especially, it's practically a no-brainer. For this reason, this website was one of the first ones that I made, but over time I've gradually added to it as I learned new skills.
 
-For the backend, I tried using Python - specifically FastAPI and Beanie. I found the development process about as hard as I was expecting. While I appreciate having done it, I plan on sticking to TypeScript for the backend in the future.
+<br />
 
-Proyecto is designed to help you be more mindful of your time. By establishing clear projects and goals, you can ensure that any progress you make towards a project that you are working on contributes to your overall aims. Feel free to try it out!
-
-# Tools
-This app was developed with `Vite` using `TypeScript` and `FastAPI`, and is hosted with GitHub Pages and Heroku. A `MongoDB` database hosted on Atlas was connected to with the `Beanie` library.
+I decided to put some of my projects up here so that a) you (the reader 🙃) can see what I've been working on, and b) so that I have some record of all the cool things I've made and when. I plan on adding new awesome things, so if you're not as pumped as I am, check back in a couple of months :)
 
 # What I learned
-## Types, types!
-What I expected from static typing was an increase in development speed - I wouldn't have to worry about accessing a field that doesn't exist, or forget to convert a string to an integer. What I wasn't expecting was how early on in the project I had to define my data types. Originally, my development process went as follows:
+## KISS
+I always wanted to put on display the projects that I've been working on in my website. Originally, I was going to make a Rest API backend which would host a database of all the projects I've ever worked on, write some sort of keyword search engine for searching through them, and connect *that* to a GPT-powered recommendation algorithm-type-thing. It definitely would have displayed my skills. But it also would have been less reliable, more expensive, and more difficult to maintain.
 
-<ol style="list-style-type: decimal; list-style-position: inside; margin-top: 15px; margin-bottom: 15px;">
-<li>Create a user object with the bare minimum features.</li>
-<li>Realise I forgot to include a username.</li>
-<li>Search my \*entire\* application for any mention of user, and make sure it handles the username properly.</li>
-<li>Repeat steps 2-3 until running out of energy.</li>
+<br />
 
-</ol>
-
-Now, with static typing:
-<ol style="list-style-type: decimal; list-style-position: inside; margin-top: 15px; margin-bottom: 15px;">
-<li>Define the `user` interface</li>
-<li>Implement the interface every time I need to change the user.</li>
-</ol>
-
-While I was programming, this was a pain: code that I *knew* would work threw errors, and I had to think much more about exactly what my data types would look like. However towards the end of the project, I was grateful that I had such clear data structures.
-
-## Consitent colour
-I picked a pink-to-indigo gradient very early on in the project, and tried to stick with it as I was developing the front end. I standardised input fields and definitely plan on making my own component library at some point.
-
-# Local setup
-To set up and run this project locally, the GitHub repo can be found [here](https://github.com/hugojjohnson/proyecto) and [here](https://github.com/hugojjohnson/proyecto-backend).
-
-1. Download or clone the repo onto your local machine
-
-2. Install [NodeJS](https://nodejs.org/en/download/package-manager)
-
-3. Set up a [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) and save the login credentials in `.env`.
-
-
+Instead, this website is built solely in React, with each project post hard-coded into it. Whenever I add a project, I just edit the website and re-deploy it. And that's mean I had more time to work on other, more interesting projects (like <a target="_blank" href="https://hugojjohnson.github.com/workaholic">this one</a>).
 
 
