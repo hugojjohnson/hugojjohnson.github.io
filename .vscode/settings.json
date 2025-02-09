@@ -1,0 +1,30 @@
+{
+    "files.exclude": {
+        "**/postcss.config.js": true,
+        "**/tsconfig.json": true,
+        "**/package.json": true,
+        "**/package-lock.json": true,
+        "**/.vscode": true,
+        "**/dist": true,
+        "**/tsconfig.node.json": true,
+        "**/vite.config.ts": true,
+        "**/.gitignore": true,
+        "**/types.d.ts": true,
+        "**/tailwind.config.js": true,
+        "**/build/": true
+    },
+    "search.exclude": {
+        "**/postcss.config.js": false,
+        "**/tsconfig.json": false,
+        "**/package.json": false,
+        "**/package-lock.json": false,
+        "**/.vscode": false,
+        "**/dist": false,
+        "**/tsconfig.node.json": false,
+        "**/vite.config.ts": false,
+        "**/.gitignore": false,
+        "**/types.d.ts": false,
+        "**/tailwind.config.js": false,
+        "**/build/": false
+    }
+}

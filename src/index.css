@@ -4,7 +4,7 @@
 
 @layer utilities {
     .blog-title {
-            @apply text-black text-4xl font-bold mb-4
+        @apply text-black text-4xl font-bold mb-4
     }
 
     .blog-subtitle {
@@ -12,24 +12,38 @@
     }
 
 
-    .blog h1 {
+    .markdown h1 {
         @apply text-black text-4xl font-bold mb-4 mt-8 first-letter:capitalize
     }
 
-    .blog h2 {
+    .markdown h2 {
         @apply text-black text-2xl font-bold mb-3 mt-6 first-letter:capitalize
     }
 
-    .blog h3 {
+    .markdown h3 {
         @apply text-gray-600 text-xl my-2 first-letter:capitalize
     }
-    .blog a {
+
+    .markdown a {
         @apply text-blue-600
     }
-    .blog code {
+
+    .markdown code {
         @apply rounded-md
     }
+
+    .markdown ol {
+        @apply list-decimal list-inside mt-4 mb-4
+    }
+    .markdown ul {
+        @apply list-disc list-inside mt-4 mb-4
+    }
+
+    .markdown pre {
+        @apply p-5 rounded-md my-4
+    }
 }
+
 
 /* SVG Wave Animation */
 
