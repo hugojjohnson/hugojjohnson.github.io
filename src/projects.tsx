@@ -427,10 +427,10 @@ for epoch in range(epochs):
         </div>
     },
     {
-        url: "cell-counting",
-        title: "Optimizing Cell Counting in Images",
+        url: "hardware-accelerator",
+        title: "Designing a hardware accelerator in Chisel",
         blurb: "",
-        cover: "/media/projects/cells-1.webp",
+        cover: "/media/projects/chisel.webp",
         githubLink: "https://github.com/hugojjohnson/ml-template",
         tags: [
             "C",
@@ -466,10 +466,10 @@ for epoch in range(epochs):
         </div>
     },
     {
-        url: "hardware-accelerator",
-        title: "Designing a hardware accelerator in Chisel",
+        url: "cell-counting",
+        title: "Optimizing Cell Counting in Images",
         blurb: "",
-        cover: "/media/projects/chisel.webp",
+        cover: "/media/projects/cells-1.webp",
         githubLink: "https://github.com/hugojjohnson/ml-template",
         tags: [
             "C",
