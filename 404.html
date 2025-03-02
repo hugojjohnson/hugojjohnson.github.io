@@ -27,10 +27,12 @@
 
         var l = window.location;
         if (l.search.indexOf('?/') === -1) {
+            var newPath = l.pathname.split('/').slice(pathSegmentsToKeep + 1).join('/');
+
             l.replace(
                 l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-                l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-                l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+                l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') +
+                (newPath ? '/?/' + newPath.replace(/&/g, '~and~') : '') +
                 (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
                 l.hash
             );
